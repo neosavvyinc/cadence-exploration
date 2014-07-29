@@ -20,4 +20,10 @@ libraryDependencies += "com.jolbox" % "bonecp" % "0.7.1.RELEASE"
 
 libraryDependencies += "com.github.tototoshi" %% "slick-joda-mapper" % "0.4.0"
 
+libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.2.3"
+
+libraryDependencies += "com.typesafe.akka" %% "akka-testkit" % "2.2.3" % "test"
+
+Revolver.settings
+
 
