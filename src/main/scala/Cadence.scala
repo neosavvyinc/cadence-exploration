@@ -3,6 +3,7 @@
  */
 
 import akka.actor.{ ActorRef, Actor }
+import com.cadence.service.CadenceEndpoint
 
 class Cadence extends Actor with CadenceEndpoint {
 

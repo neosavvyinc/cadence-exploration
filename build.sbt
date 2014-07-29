@@ -26,4 +26,6 @@ libraryDependencies += "com.typesafe.akka" %% "akka-testkit" % "2.2.3" % "test"
 
 Revolver.settings
 
+Revolver.enableDebugging(port = 5050, suspend = false)
+
 
