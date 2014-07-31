@@ -10,15 +10,12 @@ object Boot extends App {
 
   implicit val system = ActorSystem("on-spray-can")
 
-  val cadenceService = getActor
+  val cadenceService = system.actorOf(Props(new Cadence), "service")
 
   implicit val executor = scala.concurrent.ExecutionContext.Implicits.global
 
   IO(Http) ! Http.Bind(cadenceService, interface = "0.0.0.0", port = Configuration.portHttp)
 
-  private def getActor = {
-    system.actorOf(Props(new Cadence), "service")
-  }
 }
 
 
